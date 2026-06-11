@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Monster Stocks</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 20px; color: #1a1a1a; line-height: 1.6; }
+  h1 { color: #ff6b00; font-size: 1.8rem; margin-bottom: 4px; }
+  h2 { color: #333; font-size: 1.1rem; margin-top: 2em; border-bottom: 1px solid #eee; padding-bottom: 4px; }
+  p, li { font-size: 0.95rem; }
+  ul { padding-left: 1.4em; }
+  a { color: #ff6b00; }
+  .meta { color: #666; font-size: 0.85rem; margin-bottom: 2em; }
+  footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #eee; color: #999; font-size: 0.8rem; }
+</style>
+</head>
+<body>
+<h1>Monster Stocks — Privacy Policy</h1>
+<p class="meta">Effective date: June 11, 2026 &nbsp;·&nbsp; Last updated: June 11, 2026</p>
+
+<p>Monster Stocks ("the App") is a gamified stock and crypto tracker built for entertainment. Your privacy is important. This policy explains what data the App collects, where it goes, and how it is used.</p>
+
+<h2>1. Data Stored on Your Device</h2>
+<p>The following data is stored locally on your device using Apple's SwiftData framework and never shared with third parties unless you opt into Arena features (see Section 3):</p>
+<ul>
+  <li><strong>Portfolio data</strong> — ticker symbols, share counts, purchase prices, and dates you choose to track.</li>
+  <li><strong>Monster game state</strong> — your monsters' names, levels, evolution stage, bond score, and achievements.</li>
+  <li><strong>Hunter profile</strong> — your chosen hunter name and team name.</li>
+  <li><strong>App events and alerts</strong> — a log of in-game events such as evolutions and market alerts.</li>
+</ul>
+<p>This data remains on your device and in your personal iCloud account (via iCloud Backup) and is not accessible by us.</p>
+
+<h2>2. Market Data APIs</h2>
+<p>The App contacts the following services to fetch live market data. Only stock ticker symbols and/or crypto coin IDs are sent — no personally identifiable information (PII) is transmitted.</p>
+<ul>
+  <li><strong>Polygon.io</strong> — real-time and historical stock prices, news, and financial data.</li>
+  <li><strong>CoinGecko</strong> — cryptocurrency prices and metadata.</li>
+  <li><strong>SEC EDGAR</strong> — public regulatory filings and insider trading disclosures.</li>
+  <li><strong>FPDS.gov / USASpending</strong> — public government contract data.</li>
+  <li><strong>Yahoo Finance RSS</strong> — public market news headlines.</li>
+  <li><strong>OpenInsider / Stock Watcher</strong> — public congressional and insider trade disclosures.</li>
+</ul>
+<p>These services' own privacy policies govern the data they receive. The App uses these APIs read-only; no account data or personal information is included in requests.</p>
+
+<h2>3. Arena (Leaderboard) — iCloud Public Database</h2>
+<p>The Arena feature lets you compete with other players in weekly stock-pick contests. If you participate, the following information is stored in Apple's iCloud public CloudKit database and is visible to other Arena participants:</p>
+<ul>
+  <li>Your chosen <strong>hunter name</strong> and <strong>avatar emoji</strong></li>
+  <li>Your <strong>weekly stock picks</strong> (ticker symbols and direction)</li>
+  <li>Your <strong>win/loss record</strong> and <strong>hunter rank</strong></li>
+</ul>
+<p>Arena participation is optional. You can use the App's portfolio, monster, and brief features without participating in Arena. We do not collect your real name, email, Apple ID, or device identifier for Arena — your arena identity is entirely the hunter name you choose.</p>
+
+<h2>4. AI Monster Image Generation</h2>
+<p>When a monster image is not found in our cache (Cloudflare R2), the App calls <strong>OpenAI's image generation API</strong> to create a monster illustration. The request includes only:</p>
+<ul>
+  <li>The stock or crypto ticker symbol</li>
+  <li>Game attributes derived from public market data (volatility category, market cap tier, element type)</li>
+</ul>
+<p>No personal data, portfolio details, or account information is sent to OpenAI. Generated images are cached on Cloudflare R2 and reused for all users with the same ticker.</p>
+
+<h2>5. Brokerage Connection (SnapTrade — Optional)</h2>
+<p>The App offers an optional brokerage connection via <strong>SnapTrade</strong>, a third-party financial data connector. If you choose to connect a brokerage:</p>
+<ul>
+  <li>You are redirected to SnapTrade's OAuth flow. We never see your brokerage credentials.</li>
+  <li>SnapTrade securely provides the App with a read-only view of your portfolio positions (ticker symbols and share counts).</li>
+  <li>Your brokerage access token is stored in your device's secure Keychain. It is not sent to our servers.</li>
+  <li>The App cannot execute trades, move funds, or access your brokerage password.</li>
+</ul>
+<p>SnapTrade's privacy policy governs the data they process: <a href="https://snaptrade.com/privacy-policy">snaptrade.com/privacy-policy</a>.</p>
+
+<h2>6. Subscription Purchases</h2>
+<p>Subscriptions are handled entirely by <strong>Apple StoreKit</strong>. We do not process payment information directly. Apple's Privacy Policy governs all purchase transactions: <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.</p>
+
+<h2>7. Notifications</h2>
+<p>If you grant notification permission, the App sends <strong>local and push notifications</strong> about market events (monster evolutions, price alerts, morning briefs). Notification permission is optional; the App functions without it. We do not use a third-party push service — notifications are delivered through Apple's APNs infrastructure.</p>
+
+<h2>8. Analytics and Tracking</h2>
+<p>The App does <strong>not</strong> use any third-party analytics SDKs (e.g., Firebase, Mixpanel, Amplitude) or advertising networks. We do not track you across other apps or websites. We do not collect your IP address or device advertising identifier (IDFA).</p>
+
+<h2>9. Data Retention and Deletion</h2>
+<p>All local data can be deleted by uninstalling the App. Arena records in the iCloud public database are retained indefinitely to maintain leaderboard history; contact us at the address below to request deletion of your Arena records. Brokerage connection tokens can be revoked at any time from within the App (Settings → Brokerage → Disconnect).</p>
+
+<h2>10. Children's Privacy</h2>
+<p>The App is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has submitted personal information, please contact us and we will delete it promptly.</p>
+
+<h2>11. Changes to This Policy</h2>
+<p>We may update this policy as features change. The "Last updated" date at the top reflects when it was last revised. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+
+<h2>12. Contact</h2>
+<p>Questions about this privacy policy? Contact us at:<br>
+<a href="mailto:support@monsterstocks.app">support@monsterstocks.app</a></p>
+
+<footer>
+  &copy; 2026 Monster Stocks. All rights reserved. &nbsp;·&nbsp; 
+  <a href="./terms">Terms of Service</a> &nbsp;·&nbsp; 
+  <a href="./support">Support</a>
+</footer>
+</body>
+</html>
