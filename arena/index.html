@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monster Stocks Arena — Join the Hunt</title>
+  <meta property="og:title" content="Monster Stocks Arena ⚔️">
+  <meta property="og:description" content="Pick 7 tickers. Compete all week. Stocks become monsters.">
+  <style>
+    body { margin:0; font-family:-apple-system,system-ui,sans-serif; background:#0a0a14; color:#fff;
+           display:flex; flex-direction:column; align-items:center; justify-content:center;
+           min-height:100vh; text-align:center; padding:24px; }
+    h1 { font-size:2rem; margin:.3em 0; }
+    p  { color:#9aa; max-width:420px; line-height:1.5; }
+    .cta { margin-top:24px; background:#ff9500; color:#000; font-weight:700; padding:14px 34px;
+           border-radius:14px; text-decoration:none; font-size:1.05rem; }
+    .emoji { font-size:4rem; }
+  </style>
+</head>
+<body>
+  <div class="emoji">⚔️🐉</div>
+  <h1>Monster Stocks Arena</h1>
+  <p>Pick 7 tickers. Compete against hunters worldwide. Picks lock at Monday's
+     opening bell — real returns decide the winner.</p>
+  <p>If you have Monster Stocks installed, this page opens the Arena automatically.</p>
+  <a class="cta" href="https://apps.apple.com/app/id6769938630">Get Monster Stocks</a>
+  <script>
+    // Users WITH the app never see this page (universal link intercepts).
+    // Anyone who lands here doesn't have it — nudge to the App Store.
+    setTimeout(function () {
+      window.location.href = "https://apps.apple.com/app/id6769938630";
+    }, 2500);
+  </script>
+</body>
+</html>
